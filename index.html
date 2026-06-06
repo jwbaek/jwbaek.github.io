@@ -2,13 +2,6 @@
 <html lang="en">
 <head>
 
-<!-- 
-  README
-  --------
-  If you are using this HTML as your website template,
-  please change the Google Analytics ID or remove that block of code.
--->
- 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCWWLEYW8F"></script>
 <script>
@@ -32,7 +25,6 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
   <!-- CSS
@@ -40,9 +32,17 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="skeleton.css">
 
-  <!-- Favicon
-  <link rel="icon" type="image/png" href="favicon.ico">
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+    .topnav { margin-top: 2rem; font-size: 1.6rem; display: flex; align-items: baseline; justify-content: space-between; }
+    .topnav .brand { color: #222; text-decoration: none; font-size: 2rem; font-weight: 600; }
+    .topnav .navlinks a { color: #222; text-decoration: none; margin-left: 1.8rem; }
+    .topnav .navlinks a:hover { text-decoration: underline; }
+    .topnav .navlinks a.active { font-weight: 600; }
+    .topnav-rule { margin: 1rem 0 0 0; }
+    .theme { font-size: 1.8rem; font-weight: 400; margin-bottom: 0.4rem; }
+    .theme-desc { color: #777; font-size: 1.5rem; margin: 0 0 0.8rem 0; }
+    .eight.columns p { margin-bottom: 1rem; }
+  </style>
 
 </head>
 <body>
@@ -51,20 +51,34 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
-    <div class="row" style="margin-top: 10%">
+    <div class="topnav">
+        <a href="index.html" class="brand">Jackie Baek</a>
+        <div class="navlinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="publications.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="CV/baek_cv.pdf">CV</a>
+        </div>
+    </div>
+
+    <hr class="topnav-rule">
+
+    <div class="row" style="margin-top: 3%">
         <div class="four columns" style="margin-top: 3%">
-            <img src="profile.jpg" width="90%">
+            <img src="profile.jpg" width="80%" style="margin-left: 14%;">
         </div>
         <div class="eight columns">
-            <h2>Jackie Baek</h2>
+            <h4 style="font-size: 2.2rem; font-weight: 400; margin-bottom: 0.9rem;">About me</h4>
                 <p>
     I am an assistant professor at NYU Stern in the
     <a class="hidelink" href="https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/ioms-dept">Department of Technology, Operations and Statistics</a>.
-    Prior to this, I was a research fellow in the <a class='hidelink' href="https://simons.berkeley.edu/">Simons Institute at UC Berkeley</a>, and 
+    Prior to this, I was a research fellow in the <a class='hidelink' href="https://simons.berkeley.edu/">Simons Institute at UC Berkeley</a>, and
     I obtained my PhD in <a class="hidelink" href="https://orc.mit.edu/">Operations Research from MIT</a>, advised by <a class="hidelink" href="http://web.mit.edu/vivekf/www/">Prof. Vivek Farias</a>.
-  </p><p>
-My research focuses on human-centered data-driven algorithms. 
-I study the societal impact of algorithmic systems, design practical algorithms for socio-technical applications, and develop methods for effective human-AI collaboration.
+  </p>
+  <p>
+My research focuses on human-centered data-driven algorithms.
+I study the societal impact of AI systems, and I develop data-driven and AI-based methods for decision-making and human-AI collaboration.
+<!-- I study the societal impact of algorithmic systems, design practical algorithms for socio-technical applications, and develop methods for effective human-AI collaboration. -->
                 </p>
 <b style="font-weight: 400">Email</b>: baek (at) stern (dot) nyu (dot) edu <br>
 <b style="font-weight: 400">Office</b>: Kaufman Management Center, 8-77 <br>
@@ -75,168 +89,63 @@ I study the societal impact of algorithmic systems, design practical algorithms 
         </div>
     </div>
           <hr>
-          <h4> Research</h4>
-
-          <h6  style="font-size: 22px"> Working Papers </h6>
+          <h4 style="font-size: 2.2rem; font-weight: 400;"> Selected Papers </h4>
+          <h6 class="theme"> Data-Driven and Agentic Decision-Making </h6>
     <ul>
-
             <li>
-                <a href="https://arxiv.org/abs/2605.16064">Misspecified Estimate-then-Optimize Leads to
-Supra-Competitive Prices</a>
-                <dd>with Vivek Farias, Farrell Wu</dd>
+                <a href="https://arxiv.org/abs/2602.12631">AI Agents for Inventory Control: Human-LLM-OR Complementarity</a>
+                <dd>with Yaopeng Fu, Will Ma, Tianyi Peng</dd>
+                <dd>Accepted to <em>EC 2026</em></dd>
             </li>
-
-
-            <li>
-                <a href="https://arxiv.org/abs/2604.18800">Optimal Exploration of New Products under Assortment Decisions</a>
-                <dd>with Atanas Dinev, Thodoris Lykouris</dd>
-            </li>
-
-
-
             <li>
                 <a href="https://arxiv.org/abs/2602.06357">LLM-SAA: LLM-persona Generated Distributions for Decision-making</a>
                 <dd>with Yunhan Chen, Ziyu Chi, Will Ma</dd>
             </li>
-
             <li>
-                <a href="https://arxiv.org/abs/2602.12631">AI Agents for Inventory Control: Human-LLM-OR Complementarity</a>
-                <dd>with Yaopeng Fu, Will Ma, Tianyi Peng</dd>
-                <ul>
-                    <li class='sub'> Accepted to the <em>27th ACM Conference on Economics and Computation (EC), 2026</em></li>
-                </ul>
+                <a href="https://arxiv.org/abs/2604.18800">Optimal Exploration of New Products under Assortment Decisions</a>
+                <dd>with Atanas Dinev, Thodoris Lykouris</dd>
             </li>
-
             <li>
-                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6165626">Balancing Customer Engagement and Annoyance in Online Retail: Insights from a Field Experiment</a>
-                <dd>with Daniel Chen, Will Ma, Dmitry Mitrofanov</dd>
-                <ul>
-                    <li class='sub'> Accepted to the <em>27th ACM Conference on Economics and Computation (EC), 2026</em></li>
-                </ul>
+                <a href="https://pubsonline.informs.org/doi/full/10.1287/msom.2023.0548">Policy Optimization for Personalized Interventions in Behavioral Health</a>
+                <dd>with Justin Boutilier, Vivek Farias, Jónas Oddur Jónasson, Erez Yoeli</dd>
+                <dd><em>M&amp;SOM, 2025</em>; Winner, <em>Pierskalla Best Paper Award 2024</em></dd>
             </li>
-
-            <li>
+            <!-- <li>
                 <a href="https://arxiv.org/abs/2512.23781">Personalized Promotions in Practice: Dynamic Allocation and Reference Effects</a>
                 <dd>with Will Ma, Dmitry Mitrofanov</dd>
-            </li>
+            </li> -->
+    </ul>
 
 
+          <h6 class="theme"> Societal Impact of AI Systems </h6>
+    <ul>
             <li>
-                <a href="https://arxiv.org/abs/2502.20063">Strategic Hiring under Algorithmic Monoculture </a>
-                <dd>with Hamsa Bastani, Shihan Chen</dd>
-            </li>
-
-            <li>
-                <a href="https://arxiv.org/abs/2406.06929">Social Learning with Limited Attention: Negative Reviews Persist under Newest First</a>
-                <dd>with Atanas Dinev, Thodoris Lykouris</dd>
-                <dd>Major Revision, <em>Operations Research</em></dd>
-                <ul>
-                    <!-- <li class='sub'> Accepted to <em>EC 2024</em></li> -->
-                    <li class='sub'> Appeared in the <em>25th ACM Conference on Economics and Computation (EC), 2024</em></li>
-                    <li class='sub'> Second place, <em>Junior Faculty Interest Group (JFIG) Paper Competition 2025</em></li>
-                </ul>
+                <a href="https://arxiv.org/abs/2605.16064">Misspecified Estimate-then-Optimize Leads to Supra-Competitive Prices</a>
+                <dd>with Vivek Farias, Farrell Wu</dd>
             </li>
 
             <li>
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4658797">The Feedback Loop of Statistical Discrimination</a>
-                (<a href="https://www.birs.ca/events/2025/5-day-workshops/25w5464/videos/watch/202503061032-Baek.html">link to talk</a>)
                 <dd>with Ali Makhdoumi</dd>
-                <dd>Major Revision, <em>Management Science</em></dd>
-                <ul>
-                    <li class='sub'>Appeared in the <em>ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization (EAAMO), 2025</em></li>
-                </ul>
+                <dd>Major Revision, <em>Management Science</em>; <em>EAAMO 2025</em></dd>
             </li>
-
-
             <li>
-                <a href="https://arxiv.org/abs/2304.03377">Leveraging Reusability: Improved Competitive Ratio of Greedy for Reusable Resources</a>
-                <dd>with Shixin Wang</dd>
+                <a href="https://arxiv.org/abs/2502.20063">Strategic Hiring under Algorithmic Monoculture </a>
+                <dd>with Hamsa Bastani, Shihan Chen</dd>
             </li>
+            <li>
+                <a href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2022.01985">Fair Exploration via Axiomatic Bargaining</a>
+                <dd>with Vivek Farias</dd>
+                <dd><em>Management Science, 2024</em>; <em>NeurIPS 2021 (Spotlight)</em></dd>
+            </li>
+
 
     </ul>
 
-          <h6  style="font-size: 22px"> Publications </h6>
-    <ul>
-
-
-            <li>
-                <a href="https://dl.acm.org/doi/10.1145/3715275.3732190">When Collaborative Filtering is not Collaborative: Unfairness of PCA for Recommendations</a>
-                <dd>with David Liu, Tina Eliassi-Rad</dd>
-                <dd><em>ACM Conference on Fairness, Accountability, and Transparency (FAccT), 2025</em></dd>
-            </li>
-
-
-
-            <li>
-                <a href="https://pubsonline.informs.org/doi/full/10.1287/msom.2023.0548">Policy Optimization for Personalized Interventions in Behavioral Health</a>
-                <dd>with Justin Boutilier, Vivek Farias, Jónas Oddur Jónasson, Erez Yoeli</dd>
-                <dd><em> Manufacturing and Service Operations Management, 2025</em></dd>
-                <ul>
-                    <li class='sub'> Winner, <em>Pierskalla Best Paper Award 2024</em></li>
-                </ul>
-            </li>
-
-            <li>
-                <a href="https://pubsonline.informs.org/doi/full/10.1287/mnsc.2022.02953">The Limits to Learning a Diffusion Model</a>
-                <dd>with Vivek Farias, Andreea Georgescu, Retsef Levi, Tianyi Peng, Deeksha Sinha, Joshua Wilde, Andrew Zheng</dd>
-                <dd><em>Management Science, 2025</em></dd>
-                <ul>
-                    <li class='sub'> Appeared in the <em>22nd ACM Conference on Economics and Computation (EC), 2021</em></li>
-                </ul>
-
-            </li>
-            <li>
-                <a href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2022.01985">Fair Exploration via Axiomatic Bargaining</a> (<a href="https://www.youtube.com/watch?v=iFa1ZMppth8">link to talk</a>)
-                <dd>with Vivek Farias</dd>
-                <dd><em>Management Science, 2024</em></dd>
-
-      <ul>
-        <li class='sub'> Appeared in <em>NeurIPS 2021 (Spotlight)</em> </li>
-        <li class='sub'> Appeared in the <em>ACM Conference on Equity & Access in Algorithms, Mechanisms, & Optimization (EAAMO), 2021</em></li>
-        <li class='sub'> Second place, <em>MSOM Student Paper Competition 2022</em> </li>
-        <li class='sub'> Finalist, <em>George Nicholson Student Paper Competition 2021</em> </li>
-        <li class='sub'> Finalist, <em>RMP Jeff McGill Student Paper Award 2021</em> </li>
-        <li class='sub'> Honorable <em>Mention, MIT ORC Best Student Paper Award 2021</em> </li>
-      </ul>
-            </li>
-
-
-            <li>
-                <a href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2022.2282">Bifurcating Constraints to Improve Approximation Ratios for Network Revenue Management with Reusable Resources </a>
-                <dd>with Will Ma</dd>
-                <dd><em>Operations Research, 2022</em></dd>
-                <ul>
-                    <li class='sub'>Appeared in the <em>12th International Symposium on Algorithmic Game Theory (SAGT), 2019</em></li>
-                </ul>
-
-            </li>
-
-            <li>
-                <a href="https://proceedings.mlr.press/v206/baek23a.html">TS-UCB: Improving on Thompson Sampling With Little to No Additional Computation</a>
-                <dd>with Vivek Farias</dd>
-                <dd><em>International Conference on Artificial Intelligence and Statistics (AISTATS), 2023</em></dd>
-            </li>
-
-
-
-            <li>
-              <a href="https://www.pnas.org/doi/10.1073/pnas.2113561119">Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the United States</a>
-              <dd>with COVID-19 Forecast Hub</dd>
-                <dd><em> Proceedings of the National Academy of Sciences (PNAS), 2022</em></dd>
-      <ul>
-  <li class='sub'>This paper resulted from contributing COVID-19 forecasts (from the paper “The Limits to Learning a Diffusion Model”) to the <a href="https://covid19forecasthub.org/">COVID-19 Forecast Hub</a>.</li>
-      </ul>
-            </li>
-            
-            <li>
-                <a href="https://ieeexplore.ieee.org/abstract/document/8835079">A Game-Theoretic Analysis of Reallocation Mechanisms for Airport Landing Slots</a>
-                <dd>with Hamsa Balakrishnan</dd>
-                <dd><em>IEEE Transactions on Intelligent Transportation Systems, 2020</em></dd>
-            </li>
-    </ul>
+          <!-- <p style="font-size: 1.5rem; margin-top: 1.5rem;"><a href="publications.html">See all papers &rarr;</a></p> -->
+          <p style="margin-top: 1.5rem;">See <a href="publications.html">Research</a> for all papers.</p>
 
     <hr>
-
 
   </div>
 
